@@ -304,10 +304,47 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
+/************ LogoSlider Css ********/
+
+/* .logos {
+  overflow: hidden;
+  padding: 50px 0;
+  margin: 60px 0;
+  background:#121212;
+  white-space: nowrap;
+  position: relative;
+}  */
+.logos-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+.logos-slide {
+  display: inline-flex;
+  animation: 15s slide infinite linear;
+  padding: 50px 425px;
+  margin: 30px 0px;
+}
+.logos-slide img {
+  height: 80px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 
 /************ Skills Css ************/
 .skill {
   padding: 0 0 50px 0;
+  margin-top: 50px;
   position: relative;
 }
 .skill-bx {

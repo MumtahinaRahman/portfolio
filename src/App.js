@@ -7,12 +7,14 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { LogoSlider } from "./components/LogoSlider";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
       <Banner />
+      <LogoSlider />
       <Skills />
       <Projects />
       <Contact />
